@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
     mode: "development",
-    entry: "./src/index.js",
+    entry: "./src/index.tsx",
     output: {
         path: path.resolve(__dirname, "./dist"),
         filename: "main.js",
@@ -15,10 +15,15 @@ module.exports = {
         hot: true,
     },
     resolve: {
-        extensions: [".js", ".jsx", ".json"],
+        extensions: [".tsx", ".ts", ".js", ".jsx", ".json"],
     },
     module: {
         rules: [
+            {
+                test: /\.tsx?$/,
+                exclude: /node_modules/,
+                use: "ts-loader",
+            },
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
