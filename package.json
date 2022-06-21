@@ -17,6 +17,7 @@
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-react": "^7.17.12",
     "@babel/runtime": "^7.18.3",
+    "@faker-js/faker": "^7.3.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",

@@ -1,10 +1,11 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
+import Gallery from "../Gallery/Gallery";
 
 function App() {
     return (
         <div className="App">
-            <h1>Hello World!</h1>
+            <Gallery/>
         </div>
     )
 }
