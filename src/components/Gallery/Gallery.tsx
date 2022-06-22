@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./Gallery.scss";
 import Image from "../Image/Image";
 
 interface Photo {
@@ -28,6 +29,9 @@ function Gallery() {
             })
             const validatedUrls = newImgsUrls.filter(url => url != null);
             setImgsUrls(state => [...state, ...validatedUrls]);
+        })
+        .catch(error => {
+            alert("We are sorry. It was not possible to load images. You can check internet connection and try again.")
         })
     }, []);
 

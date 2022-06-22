@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./Image.scss";
 
 interface ImageProps {
     imgSrc: string
@@ -12,9 +13,10 @@ function Image(props: ImageProps) {
     }
 
     return (
-        <img 
+        <img
+            className="Image"
             src={props.imgSrc}
-            alt="Sth"
+            alt={`Image from url ${props.imgSrc}`}
             loading="lazy"
             onError={event => handleImgError(event)}
         />
