@@ -8,6 +8,7 @@ The project was created using:
 * React
 * Webpack
 * Sass
+* TypeScript
 * to be continued... (😉)
 
 😉 - it is just the beginning of this project. By doing this project I want to practice what I already know and learn new skills.
